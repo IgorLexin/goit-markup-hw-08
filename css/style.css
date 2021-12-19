@@ -8,6 +8,7 @@
 
 body {
   font-family: Roboto, sans-serif;
+  background: #ffffff;
 }
 
 .list {
@@ -175,6 +176,13 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-map-link:hover,
+.footer-map-link:focus,
+.footer-contact-link:hover,
+footer-contact-link:focus {
+  color: var(--alt-color);
 }
 
 /* ====================Portfolio Page====================== */
