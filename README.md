@@ -1,2 +1,3 @@
-# goit-markup-hw-02
-Homework #2
+# goit-markup-hw-03
+
+https://igorlexin.github.io/goit-markup-hw-03/
