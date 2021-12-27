@@ -329,7 +329,8 @@ footer-contact-link:focus {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
-  border-color: #f5f4fa;
+  border-color: transparent;
+  box-shadow: none;
   padding: 6px 22px;
 }
 
