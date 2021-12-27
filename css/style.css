@@ -382,6 +382,10 @@ footer-contact-link:focus {
   margin-bottom: 0;
 }
 
+.portfolio-box-align {
+  padding: 20px 24px;
+}
+
 .portfolio-box-item-title {
   font-weight: 700;
   font-size: 18px;
