@@ -248,6 +248,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-top: 30px;
+  margin-bottom: 10px;
 }
 
 .our-team-item-descr {
@@ -256,6 +258,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--description-color);
+  padding-bottom: 30px;
 }
 
 /* =========================Footer========================= */
