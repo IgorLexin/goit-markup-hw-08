@@ -80,6 +80,11 @@ img {
   margin-left: auto;
 }
 
+.mail-icon {
+  height: 12px;
+  width: 16px;
+}
+
 .header-contact-link {
   font-weight: 500;
   font-size: 14px;
@@ -94,10 +99,22 @@ img {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--alt-color);
+  fill: var(--alt-color);
 }
 
 /* =========================Hero========================= */
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero_background.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 1600px 600px;
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
