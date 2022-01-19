@@ -81,11 +81,13 @@ img {
 }
 
 .mail-icon {
-  height: 12px;
-  width: 16px;
+  margin-right: 10px;
+  fill: var(--description-color);
 }
 
 .header-contact-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -99,6 +101,12 @@ img {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--alt-color);
+  fill: var(--alt-color);
+}
+
+.mail-icon:hover,
+.mail-icon:focus {
+  color: inherit;
   fill: var(--alt-color);
 }
 
