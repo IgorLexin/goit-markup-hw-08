@@ -40,6 +40,7 @@ img {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  border: 2px solid red;
 }
 /* =========================Header========================= */
 .header-menu {
@@ -80,7 +81,12 @@ img {
   margin-left: auto;
 }
 
-.mail-icon {
+.envelope-icon {
+  margin-right: 10px;
+  fill: var(--description-color);
+}
+
+.phone-icon {
   margin-right: 10px;
   fill: var(--description-color);
 }
@@ -101,12 +107,12 @@ img {
 .header-contact-link:hover,
 .header-contact-link:focus {
   color: var(--alt-color);
-  fill: var(--alt-color);
 }
 
-.mail-icon:hover,
-.mail-icon:focus {
-  color: inherit;
+.header-contact-link:hover>.envelope-icon, 
+.header-contact-link:focus>.envelope-icon,
+.header-contact-link:hover>.phone-icon,
+.header-contact-link:focus>.phone-icon {
   fill: var(--alt-color);
 }
 
@@ -178,6 +184,23 @@ img {
   margin: -1px;
 }
 
+.about-us-icons-list {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-list-item {
+width: calc((100% - 90px) / 4);
+margin-right: 30px;
+height: 120px;
+background-color: #F5F4FA;
+}
+
+.about-us-icon{
+margin: 25px 100px;
+}
+
 .about-us-list {
   display: flex;
   justify-content: space-between;
@@ -245,7 +268,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding: 0 452px;
+  padding: 0 450px;
   margin-bottom: 50px;
 }
 
@@ -283,14 +306,102 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--description-color);
+  margin-bottom: 16px;
+}
+
+.team-social-list {
+  display: flex;
+  margin: 0 32px;
   padding-bottom: 30px;
 }
 
+.team-social-item +.team-social-item {
+  margin-left: 10px;
+}
+
+.team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius:50%;
+}
+
+.team-social-icon {
+  fill: var(--description-color);
+  width: 20px;
+  height: 20px;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: var(--alt-color);
+}
+
+.team-social-link:hover .team-social-icon,
+.team-social-link:focus .team-social-icon {
+  fill: var(--header-color);
+}
+
+/* ========================Regular Clients=============== */
+.regular-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.regular-clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  padding: 0 386px;
+  margin-bottom: 50px;
+}
+
+.regular-clients-list {
+  display: flex;
+}
+
+.regular-clients-item+.regular-clients-item {
+  margin-left: 30px;
+}
+
+.regular-clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.regular-clients-icon {
+  fill: #AFB1B8;
+}
+
+.regular-clients-link:hover,
+.regular-clients-link:focus {
+  border-color: var(--alt-color);
+}
+
+.regular-clients-link:hover .regular-clients-icon,
+.regular-clients-link:focus .regular-clients-icon {
+  fill: var(--alt-color);
+}
 /* =========================Footer========================= */
 .footer {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-wrap {
+  display: flex;
 }
 
 .header-logo-footer {
@@ -309,6 +420,8 @@ img {
 .footer-list {
   font-style: normal;
   margin-top: 20px;
+  margin-right: 70px;
+  padding: 0;
 }
 
 .footer-list-item:not(:last-child) {
@@ -336,6 +449,53 @@ footer-contact-link:focus {
   color: var(--alt-color);
 }
 
+.join-wrap {
+  margin-top: 10px;
+}
+
+.join-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.join-list {
+  display: flex;
+  
+}
+
+.join-social-item + .join-social-item {
+  margin-left: 10px;
+}
+
+.join-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1A;
+  border-radius: 50%;
+}
+
+.join-social-icon {
+  fill: var(--header-color);
+  width: 20px;
+  height: 20px;
+}
+
+.join-social-link:hover,
+.join-social-link:focus {
+  background-color: var(--alt-color);
+}
+
+.join-social-link:hover .team-social-icon,
+.join-social-link:focus .team-social-icon {
+  fill: var(--header-color);
 /* ====================Portfolio Page====================== */
 .portfolio-list {
   padding-top: 94px;
