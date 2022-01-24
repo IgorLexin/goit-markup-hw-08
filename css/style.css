@@ -316,6 +316,7 @@ img {
   position: relative;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
+  z-index: -1;
 }
 
 .img-row-item:nth-child(3n) {
