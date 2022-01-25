@@ -92,6 +92,7 @@ img {
   color: var(--main-color);
   transition-property: color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts {
@@ -104,6 +105,7 @@ img {
   fill: var(--description-color);
   transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-icon {
@@ -111,6 +113,7 @@ img {
   fill: var(--description-color);
   transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact-link {
@@ -124,6 +127,7 @@ img {
   margin-left: 50px;
   transition-property: color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover,
@@ -199,6 +203,7 @@ img {
   background: rgba(0, 0, 0, 0.2);
   transition-property: opacity, visability;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -214,6 +219,7 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  padding: 40px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -234,10 +240,25 @@ img {
 
 .close-icon {
   fill: #212121;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover .close-icon {
+  fill: var(--alt-color);
+}
+
+.modal-close:hover .close-icon {
+  fill: var(--alt-color);
 }
 
 .order-form {
   margin: 40px;
+}
+
+.order-form-field {
+  margin-bottom: 10px;
 }
 
 .order-form-title {
@@ -247,18 +268,24 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
-/* .order-form-list {
-
-} */
 .order-item-name {
+  position: relative;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  padding-bottom: 4px;
   color: #757575;
+}
+
+.order-input-wrap {
+  position: relative;
+}
+
+.order-textarea-wrap {
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 .order-input {
@@ -267,8 +294,117 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
 }
 
+.order-item-comment {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-bottom: 4px;
+  color: #757575;
+}
+
+.order-input-comment {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-input:focus + .input-icon {
+  fill: var(--alt-color);
+}
+
+.order-input:focus {
+  border-color: var(--alt-color);
+}
+
+.order-input-comment::placeholder {
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+.policy-check:checked + .check-text::before {
+  border: none;
+  background-image: url(../images/checkmark-icon.svg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.policy-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.policy-link {
+  color: var(--alt-color);
+}
+
+.order-modal-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+  background-color: var(--alt-color);
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.comand-btn:hover,
+.comand-btn:focus {
+  background-color: #188ce8;
+}
 /* =========================About Us========================= */
 .about-us {
   padding-top: 94px;
@@ -453,6 +589,7 @@ img {
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
@@ -461,6 +598,7 @@ img {
   height: 20px;
   transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -509,12 +647,14 @@ img {
   border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-icon {
   fill: var(--icon-links);
   transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-clients-link:hover,
@@ -568,6 +708,7 @@ img {
   color: var(--header-color);
   transition-property: color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact-link {
@@ -577,6 +718,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-map-link:hover,
@@ -588,6 +730,7 @@ img {
 
 .join-wrap {
   margin-top: 10px;
+  margin-right: 93px;
 }
 
 .join-title {
@@ -596,7 +739,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--header-color);
   margin-bottom: 20px;
 }
 
@@ -618,6 +761,7 @@ img {
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-social-icon {
@@ -626,6 +770,7 @@ img {
   height: 20px;
   transition-property: fill;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-social-link:hover,
@@ -636,6 +781,62 @@ img {
 .join-social-link:hover .team-social-icon,
 .join-social-link:focus .team-social-icon {
   fill: var(--header-color);
+}
+
+/* ====================Footer Subscribe====================== */
+.footer-subscribe-wrap {
+  margin-top: 10px;
+}
+
+.subscribe-filed-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+.subscribe-field {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 16px;
+  padding: 16px 15px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe-field::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  padding-left: 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--header-color);
+  background-color: var(--alt-color);
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.subscribe-btn-icon {
+  fill: var(--header-color);
+  margin-left: 10px;
 }
 /* ====================Portfolio Page====================== */
 
@@ -669,6 +870,7 @@ img {
   padding: 6px 22px;
   transition-property: background-color, color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn-item {
@@ -712,6 +914,7 @@ img {
   margin-bottom: 30px;
   transition-property: box-shadow;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-box-item:nth-child(3n) {

@@ -56,18 +56,70 @@
                             <use href="./images/icons.svg#close-modal"></use>
                         </svg>
                     </button>
-                    <form action="" class="order-form">
                         <h3 class="order-form-title">Оставьте свои данные, мы вам перезвоним</h3>
-                        <ul class="order-form-list list">
-                            <li class="order-form-item">
-                                <label for="name" class="order-item-name">Имя<label/>
-                                <input type="name" name="name" id="name" class="order-input" autofocus />
-                            </li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </form>
+                    <form action="#">
+                        <div class="order-form-field">
+                            <label for="user-name" class="order-item-name">Имя</label>
+                                <div class="order-input-wrap">
+                                    <input type="name" 
+                                    class="order-input"
+                                    name="user-name" 
+                                    id="user-name"  
+                                    required
+                                    autofocus
+                                    minlength="2" />
+                                        <svg class="input-icon" width="12px" height="12px">
+                                            <use href="./images/icons.svg#person-icon"></use>
+                                        </svg>
+                                </div>
+                        </div>
+                        <div class="order-form-field">
+                            <label for="user-phone" class="order-item-name">Телефон</label>
+                                <div class="order-input-wrap">
+                                    <input type="tel" 
+                                    class="order-input"
+                                    name="user-phone" 
+                                    id="user-phone"
+                                    required />
+                                        <svg class="input-icon" width="13px" height="13px">
+                                            <use href="./images/icons.svg#phone-order-icon"></use>
+                                        </svg>
+                                </div>
+                        </div>
+                        <div class="order-form-field">
+                            <label for="user-mail" class="order-item-name">Почта</label>
+                                <div class="order-input-wrap">
+                                    <input type="email" 
+                                    class="order-input"
+                                    name="user-email" 
+                                    id="user-mail" 
+                                    required />
+                                        <svg class="input-icon" width="15px" height="12px">
+                                            <use href="./images/icons.svg#envelope-order-icon"></use>
+                                        </svg>
+                                </div>
+                        </div>
+                        <div class="order-form-field">
+                            <label for="user-comment" class="order-item-comment">Комментарий</label>
+                                <div class="order-textarea-wrap">
+                                    <textarea
+                                    class="order-input-comment"
+                                    name="comment" 
+                                    id="user-comment"
+                                    placeholder="Введите текст"></textarea>
+                                </div>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" 
+                            class="policy-check visually-hidden"
+                            name="policy" 
+                            id="policy-confirm" />
+                            <label for="policy-confirm" class="check-text"><span class="policy-text"> Соглашаюсь с рассылкой и принимаю 
+                                <a href="#"class="policy-link">Условия договора</a></span></label>
+                        </div>
+                        <div class="order-btn-modal">
+                        <button type="submit" class="order-modal-btn">Отправить</button>
+                        </div>
                     </form>
                 </div>
             </div>  
@@ -414,6 +466,23 @@
                         </li>
                     </ul>
                 </div>
+            <div class="footer-subscribe-wrap">
+                <form action="#">
+                    <label for="subscribe-name" class="subscribe-filed-name">Подпишитесь на рассылку</label>
+                    <div class="input-btn">
+                        <input type="email" 
+                        class="subscribe-field"
+                        name="subscribe-name"
+                        id="subscribe-name" 
+                        placeholder="E-mail" />
+                        <button type="submit" class="subscribe-btn">Подписаться
+                            <svg class="subscribe-btn-icon" width="24" height="24">
+                                <use href="./images/icons.svg#send-icon"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
