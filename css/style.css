@@ -295,7 +295,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
-  transition-property: border-color:
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -314,8 +314,7 @@ img {
   fill: var(--alt-color);
 }
 
-.order-input:focus,
-.order-input:hover {
+.order-input:focus
   border-color: var(--alt-color);
 }
 
@@ -334,7 +333,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  transition-property: border-color:
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -346,8 +345,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order-input-comment:focus,
-.order-input-comment:hover {
+.order-input-comment:focus
   border-color: var(--alt-color);
 }
 
