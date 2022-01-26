@@ -314,7 +314,7 @@ img {
   fill: var(--alt-color);
 }
 
-.order-input:focus
+.order-input:focus {
   border-color: var(--alt-color);
 }
 
@@ -345,7 +345,7 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.order-input-comment:focus
+.order-input-comment:focus {
   border-color: var(--alt-color);
 }
 
