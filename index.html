@@ -61,13 +61,13 @@
                         <div class="order-form-field">
                             <label for="user-name" class="order-item-name">Имя</label>
                                 <div class="order-input-wrap">
-                                    <input type="name" 
+                                    <input type="text" 
                                     class="order-input"
                                     name="user-name" 
                                     id="user-name"  
                                     required
-                                    autofocus
-                                    minlength="2" />
+                                    minlength="2"
+                                    autofocus />
                                         <svg class="input-icon" width="12px" height="12px">
                                             <use href="./images/icons.svg#person-icon"></use>
                                         </svg>
@@ -115,7 +115,7 @@
                             name="policy" 
                             id="policy-confirm" />
                             <label for="policy-confirm" class="check-text"><span class="policy-text"> Соглашаюсь с рассылкой и принимаю 
-                                <a href="#"class="policy-link">Условия договора</a></span></label>
+                                <a href="#" class="policy-link">Условия договора</a></span></label>
                         </div>
                         <div class="order-btn-modal">
                         <button type="submit" class="order-modal-btn">Отправить</button>
@@ -474,6 +474,7 @@
                         class="subscribe-field"
                         name="subscribe-name"
                         id="subscribe-name" 
+                        required
                         placeholder="E-mail" />
                         <button type="submit" class="subscribe-btn">Подписаться
                             <svg class="subscribe-btn-icon" width="24" height="24">

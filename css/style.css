@@ -57,7 +57,7 @@ img {
   left: 0;
   bottom: -32px;
   height: 4px;
-  background: #2196f3;
+  background: var(--alt-color);
   border-radius: 2px;
 }
 
@@ -291,8 +291,8 @@ img {
 .order-input {
   width: 448px;
   height: 40px;
+  outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
   transition-property: border-color;
@@ -329,10 +329,12 @@ img {
 .order-input-comment {
   width: 448px;
   height: 120px;
+  font-size: 14px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: none;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -359,6 +361,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .check-text::before {
@@ -409,6 +412,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  cursor: pointer;
 }
 
 .comand-btn:hover,
@@ -813,11 +817,21 @@ img {
   margin-top: 20px;
   margin-right: 16px;
   padding: 16px 15px;
+  color: var(--header-color);
   background-color: #2f303a;
+  outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  cursor: pointer;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-field:focus {
+  border: 1px solid var(--alt-color);
 }
 
 .subscribe-field::placeholder {
@@ -842,6 +856,7 @@ img {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .subscribe-btn-icon {
