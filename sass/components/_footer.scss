@@ -40,6 +40,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+        color: var(--alt-color);
+    }
 }
 
 .footer-contact-link {
@@ -50,13 +54,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-map-link:hover,
-.footer-map-link:focus,
-.footer-contact-link:hover,
-.footer-contact-link:focus {
-    color: var(--alt-color);
+    &:hover,
+    &:focus {
+        color: var(--alt-color);
+    }
 }
 
 .join-wrap {
@@ -93,6 +94,9 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        background-color: var(--alt-color);
+    }
 }
 
 .join-social-icon {
@@ -102,14 +106,8 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.join-social-link:hover,
-.join-social-link:focus {
-    background-color: var(--alt-color);
-}
-
-.join-social-link:hover .team-social-icon,
-.join-social-link:focus .team-social-icon {
-    fill: var(--header-color);
+    &:hover .team-social-icon,
+    &:focus .team-social-icon {
+        fill: var(--header-color);
+    }
 }

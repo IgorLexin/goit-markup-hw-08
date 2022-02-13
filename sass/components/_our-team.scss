@@ -72,6 +72,14 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+         background-color: var(--alt-color);
+     }
+     &:hover .team-social-icon,
+     &:focus .team-social-icon {
+        fill: var(--header-color);
+     }
 }
 
 .team-social-icon {
@@ -81,14 +89,4 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-social-link:hover,
-.team-social-link:focus {
-    background-color: var(--alt-color);
-}
-
-.team-social-link:hover .team-social-icon,
-.team-social-link:focus .team-social-icon {
-    fill: var(--header-color);
 }
