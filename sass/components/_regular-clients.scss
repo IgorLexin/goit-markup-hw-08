@@ -1,52 +1,52 @@
 .regular-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.regular-clients-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    padding: 0 386px;
-    margin-bottom: 50px;
+.regular-clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  padding: 0 386px;
+  margin-bottom: 50px;
 }
 
-.regular-clients-list {
-    display: flex;
+.regular-clients__list {
+  display: flex;
 }
 
-.regular-clients-item+.regular-clients-item {
-    margin-left: 30px;
+.regular-clients__item + .regular-clients__item {
+  margin-left: 30px;
 }
 
-.regular-clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-links);
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition-property: border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        border-color: var(--alt-color);
-    }
-    &:hover .regular-clients-icon,
-    &:focus .regular-clients-icon {
-        fill: var(--alt-color);
-    }
+.regular-clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-links);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--alt-color);
+  }
+  &:hover .regular-clients__icon,
+  &:focus .regular-clients__icon {
+    fill: var(--alt-color);
+  }
 }
 
-.regular-clients-icon {
-    fill: var(--icon-links);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.regular-clients__icon {
+  fill: var(--icon-links);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

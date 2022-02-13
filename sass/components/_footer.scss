@@ -1,113 +1,114 @@
 .footer {
-    background: #2f303a;
-    padding-top: 60px;
-    padding-bottom: 60px;
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.footer-wrap {
-    display: flex;
+.footer--wrap {
+  display: flex;
 }
 
 .header-logo-footer {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--alt-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--alt-color);
 }
 
 .header-logo-part-alt {
-    color: var(--header-color);
+  color: var(--header-color);
 }
 
-.footer-list {
-    font-style: normal;
-    margin-top: 20px;
-    margin-right: 70px;
-    padding: 0;
+.footer__list {
+  font-style: normal;
+  margin-top: 20px;
+  margin-right: 70px;
+  padding: 0;
 }
 
-.footer-list-item:not(:last-child) {
-    margin-bottom: 9px;
+.footer__list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
-.footer-map-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--header-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, 
-    &:focus {
-        color: var(--alt-color);
-    }
+.footer__map-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--alt-color);
+  }
 }
 
-.footer-contact-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: var(--alt-color);
-    }
+.footer__contact-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--alt-color);
+  }
 }
 
-.join-wrap {
-    margin-top: 10px;
-    margin-right: 93px;
+.join--wrap {
+  margin-top: 10px;
+  margin-right: 93px;
 }
 
-.join-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    color: var(--header-color);
-    margin-bottom: 20px;
+.join__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
+  margin-bottom: 20px;
 }
 
-.join-list {
-    display: flex;
+.join__list {
+  display: flex;
 }
 
-.join-social-item+.join-social-item {
-    margin-left: 10px;
+.join__social-item + .join__social-item {
+  margin-left: 10px;
 }
 
-.join-social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: #ffffff1a;
-    border-radius: 50%;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, &:focus {
-        background-color: var(--alt-color);
-    }
+.join__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--alt-color);
+  }
 }
 
-.join-social-icon {
+.join__social-icon {
+  fill: var(--header-color);
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .team-social-icon,
+  &:focus .team-social-icon {
     fill: var(--header-color);
-    width: 20px;
-    height: 20px;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover .team-social-icon,
-    &:focus .team-social-icon {
-        fill: var(--header-color);
-    }
+  }
 }
