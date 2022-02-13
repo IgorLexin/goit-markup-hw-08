@@ -9,14 +9,14 @@
     justify-content: space-between;
 }
 
-.icons-list-item {
+.icons-list__item {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
     height: 120px;
     background-color: #f5f4fa;
 }
 
-.about-us-icon {
+.about-us__icon {
     margin: 25px 100px;
 }
 
@@ -25,7 +25,7 @@
     justify-content: space-between;
 }
 
-.about-us-item-title {
+.about-us__item-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -35,7 +35,7 @@
     margin-bottom: 10px;
 }
 
-.about-us-item-desc {
+.about-us__item-desc {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
