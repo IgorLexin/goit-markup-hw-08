@@ -576,14 +576,31 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .about-us-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding-bottom: 94px;
   }
 }
 
@@ -595,6 +612,20 @@ img {
 @media screen and (min-width: 768px) {
   .about-us-list__item {
     width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .about-us-list__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-list__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    height: 120px;
+  }
+  .about-us-list__item:nth-child(2n) {
     margin-right: 30px;
   }
 }
@@ -611,6 +642,18 @@ img {
 @media screen and (max-width: 479px) {
   .about-us-icon__wrap .about-us__icon {
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-icon__wrap .about-us__icon {
+    margin: 25px 142px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-icon__wrap .about-us__icon {
+    margin: 25px 100px;
   }
 }
 
@@ -635,6 +678,12 @@ img {
 
 .what-we-do {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
 }
 
 .what-we-do__title {
@@ -694,38 +743,77 @@ img {
 
 .our-team {
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding: 0 450px;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .our-team__title {
+    font-size: 36px;
+    line-height: 1.16;
+    padding: 0 137px;
+    padding: 0 450px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .our-team-list__item {
-  width: calc((100% - 90px) / 4);
-  margin-right: 30px;
+  margin-bottom: 30px;
   background: var(--header-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-list__item:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .our-team-list__item {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .our-team-list__item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team-list__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+  }
+  .our-team-list__item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .our-team-list__item:nth-child(4n) {
+    margin-right: 0px;
+  }
 }
 
 .our-team__item-title {
@@ -752,8 +840,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 32px;
-  padding-bottom: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-social__list {
+    margin: 0 32px;
+    padding-bottom: 30px;
+  }
 }
 
 .team-social__item + .team-social__item {
