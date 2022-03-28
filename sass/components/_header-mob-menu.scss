@@ -1,0 +1,112 @@
+.mob-menu {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.mob-menu {
+  @include tab {
+    display: none;
+  }
+}
+
+.mob-menu.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu__close-btn {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .mob-menu__close-icon {
+    fill: var(--alt-color);
+  }
+}
+
+.mob-menu__nav-list {
+  padding-top: 48px;
+}
+
+.mob-menu__nav-item {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--alt-color);
+  }
+}
+
+.mob-menu__contacts-list {
+  margin-top: 270px;
+}
+
+.mob-menu__contacts-item {
+  margin-bottom: 32px;
+}
+
+.mob-menu__contact-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+
+  color: var(--description-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &focus {
+    color: var(--alt-color);
+  }
+}
+
+.mob-menu__soc-net-list {
+  display: flex;
+  margin-top: 64px;
+}
+
+.mob-menu__soc-net-item {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  margin-left: 10px;
+  &::after {
+    content: '';
+    display: absolute;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+}
+
+.mob-menu__soc-link {
+  color: var(--alt-color);
+}

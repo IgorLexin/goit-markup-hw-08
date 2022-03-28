@@ -1,99 +1,160 @@
 .header__menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  @include tab {
+    padding: 26px 0 26px;
+  }
+  @include desk {
     padding: 24px 0 25px;
+  }
 }
 
 .current-page::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: -32px;
-    height: 4px;
-    background: var(--alt-color);
-    border-radius: 2px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -32px;
+  height: 4px;
+  background: var(--alt-color);
+  border-radius: 2px;
 }
 
 .header__logo {
-    font-family: Raleway, sans-serif;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--alt-color);
+  @include desk {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--alt-color);
-    margin-right: 93px;
+  }
 }
 
 .header__logo--part {
-    color: var(--main-color);
+  color: var(--main-color);
+}
+
+.mob-menu__open-btn {
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .mobile-menu-icon {
+    fill: var(--alt-color);
+  }
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .nav-list {
+  display: none;
+  @include tab {
     display: flex;
+    margin-left: 88px;
+  }
+  @include desk {
+    margin-left: 93px;
+  }
 }
 
 .nav__item {
-    position: relative;
-    margin-right: 50px;
+  position: relative;
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .header__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover, 
-    &:focus {
-        color: var(--alt-color);
-    }
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--alt-color);
+  }
 }
 
 .header-contacts {
+  display: flex;
+  flex-direction: column;
+  .header-contacts__item {
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @include desk {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
+  }
 }
 
 .envelope-icon {
-    margin-right: 10px;
-    fill: var(--description-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
+  fill: var(--description-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .phone-icon {
-    margin-right: 10px;
-    fill: var(--description-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
+  fill: var(--description-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .header-contact__link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
+  margin-left: 84px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--alt-color);
+  }
+  &:hover > .envelope-icon,
+  &:focus > .envelope-icon,
+  &:hover > .phone-icon,
+  &:focus > .phone-icon {
+    fill: var(--alt-color);
+  }
+  @include desk {
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--description-color);
-    margin-left: 50px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        color: var(--alt-color);
-    }
-    &:hover>.envelope-icon,
-    &:focus>.envelope-icon,
-    &:hover>.phone-icon,
-    &:focus>.phone-icon {
-        fill: var(--alt-color);
-    }
+    margin-left: 30px;
+  }
 }

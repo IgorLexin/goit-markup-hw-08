@@ -5,7 +5,30 @@
 }
 
 .footer--wrap {
-  display: flex;
+  @include desk {
+    display: flex;
+  }
+}
+
+@include tab {
+  .tablet-wrap {
+    display: flex;
+  }
+}
+
+.address-wrap {
+  text-align: center;
+  @include tab {
+    text-align: left;
+    margin-left: 76px;
+    margin-right: 165px;
+    text-align: center;
+  }
+  @include desk {
+    margin-left: 0;
+    margin-right: 70px;
+    text-align: left;
+  }
 }
 
 .header-logo-footer {
@@ -24,12 +47,15 @@
 .footer__list {
   font-style: normal;
   margin-top: 20px;
-  margin-right: 70px;
+  margin-bottom: 60px;
   padding: 0;
+  @include desk {
+    margin-bottom: 0;
+  }
 }
 
 .footer__list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer__map-link {
@@ -61,8 +87,12 @@
 }
 
 .join--wrap {
-  margin-top: 10px;
-  margin-right: 93px;
+  margin-bottom: 60px;
+  @include desk {
+    margin-top: 10px;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .join__title {
@@ -71,12 +101,18 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--header-color);
+  margin-top: 5px;
   margin-bottom: 20px;
+  @include desk {
+    text-align: left;
+  }
 }
 
 .join__list {
   display: flex;
+  justify-content: center;
 }
 
 .join__social-item + .join__social-item {

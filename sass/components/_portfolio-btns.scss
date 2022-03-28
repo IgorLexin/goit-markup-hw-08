@@ -3,13 +3,26 @@
 }
 
 .portfolio__list {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  @include tab {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 
 .portfolio__btn-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @include tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }
 
 .portfolio__button {
@@ -26,6 +39,7 @@
   border-color: transparent;
   box-shadow: none;
   padding: 6px 22px;
+  margin-bottom: 15px;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -46,7 +60,10 @@
 }
 
 .portfolio__btn-item {
-  margin-right: 8px;
+  margin-right: 10px;
+  @include tab {
+    margin-right: 8px;
+  }
 }
 
 .portfolio__btn-item:last-child {
