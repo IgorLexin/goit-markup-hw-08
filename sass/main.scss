@@ -1,23 +1,24 @@
-
 // Utils
 
-@import "./utils/variables";
-@import "./utils/resets";
-@import "./utils/hidden-content"; 
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/resets';
+@import './utils/hidden-content';
+@import './utils/container.scss';
 
 // Main Page
 
-@import "./components/header";
-@import "./components/hero";
-@import "./components/modal";
-@import "./components/about-us";
-@import "./components/what-we-do";
-@import "./components/our-team";
-@import "./components/regular-clients";
-@import "./components/footer";
-@import "./components/footer-subscribe";
+@import './components/header';
+@import './components/hero';
+@import './components/modal';
+@import './components/about-us';
+@import './components/what-we-do';
+@import './components/our-team';
+@import './components/regular-clients';
+@import './components/footer';
+@import './components/footer-subscribe';
 
 // Portfolio
 
-@import "./components/portfolio-btns";
-@import "./components/portfolio-box";
+@import './components/portfolio-btns';
+@import './components/portfolio-box';
