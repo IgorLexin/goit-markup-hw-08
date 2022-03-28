@@ -1,32 +1,67 @@
 .regular-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .regular-clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding: 0 386px;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  @include desk {
+    font-size: 36px;
+    line-height: 1.16;
+    padding: 0 137px;
+    padding: 0 450px;
+    margin-bottom: 50px;
+  }
 }
 
 .regular-clients__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.regular-clients__item + .regular-clients__item {
-  margin-left: 30px;
+// .regular-clients__item + .regular-clients__item {
+//   margin-left: 30px;
+// }
+
+.regular-clients__item {
+  display: flex;
+  @include mob {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0px;
+    }
+  }
+  @include tab {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .regular-clients__link {
-  display: flex;
+  display: inherit;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  // width: 170px;
+  width: 210px;
+  @include tab {
+    width: 226px;
+  }
   height: 92px;
   border: 1px solid var(--icon-links);
   box-sizing: border-box;
