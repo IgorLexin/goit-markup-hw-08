@@ -204,28 +204,45 @@
                 <h2 class="what-we-do__title">Чем мы занимаемся</h2>
                 <ul class="list img-row">
                     <li class="img-row__item">
-                        <img src="./images/about-img-1.jpg" alt="планшет с блок-схемой"
-                        width="370"
-                        height="294"
-                        class="what-we-do-img">
+                        <picture>
+                            <source
+                            srcset="
+                            ./images/what-we-do-1.jpg 1x,
+                            ./images/what-we-do-1-x2.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                            >
+                            <img src="./images/what-we-do-1.jpg" 
+                            alt="планшет с блок-схемой" 
+                            class="what-we-do-img"
+                            >
+                        </picture>
                         <div class="what-we-do__top">
                             <p class="whatwd-top__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="img-row__item">
-                        <img src="./images/about-img-2.jpg" alt="ноутбук с макетом"
-                        width="370"
-                        height="294"
-                        class="what-we-do-img">
+                        <picture>
+                            <source srcset="
+                            ./images/what-we-do-2.jpg 1x,
+                            ./images/what-we-do-2-x2.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <img src="./images/what-we-do-2.jpg" 
+                            alt="ноутбук с макетом" class="what-we-do-img">
+                        </picture>
                         <div class="what-we-do__top">
                             <p class="whatwd-top__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="img-row__item">
-                        <img src="./images/about-img-3.jpg" alt="планшет с палитрой"
-                        width="370"
-                        height="294"
-                        class="what-we-do-img">
+                        <picture>
+                            <source srcset="
+                            ./images/what-we-do-3.jpg 1x,
+                            ./images/what-we-do-3-x2.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <img src="./images/what-we-do-3.jpg" 
+                            alt="планшет с палитрой" class="what-we-do-img">
+                        </picture>
                         <div class="what-we-do__top">
                             <p class="whatwd-top__text">Дизайнерские решения</p>
                         </div>
