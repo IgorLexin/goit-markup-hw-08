@@ -1,9 +1,9 @@
 .mob-menu {
   @media screen and (max-width: 767px) {
-    position: absolute;
+    position: fixed;
     background-color: #fff;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -61,6 +61,10 @@
   }
 }
 
+.current-mob-page {
+  color: var(--alt-color);
+}
+
 .mob-menu__contacts-list {
   margin-top: 270px;
 }
@@ -75,8 +79,7 @@
   font-size: 34px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-
-  color: var(--description-color);
+  color: var(--alt-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -84,11 +87,26 @@
   &focus {
     color: var(--alt-color);
   }
+  @media screen and (max-width: 479px) {
+    font-size: 31px;
+  }
+}
+
+.mob-menu__mail-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--description-color);
 }
 
 .mob-menu__soc-net-list {
   display: flex;
   margin-top: 64px;
+  @media screen and (max-width: 479px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mob-menu__soc-net-item {

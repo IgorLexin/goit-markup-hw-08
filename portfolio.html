@@ -40,7 +40,7 @@
                             </svg>
                             info@devstudio.com
                         </a></li>
-                    <li><a href="tel:+380961111111" class="header-contact__link link">
+                    <li class="header-contacts__item"><a href="tel:+380961111111" class="header-contact__link link">
                             <svg class="phone-icon" width="10px" height="16px">
                                 <use href="./images/icons.svg#phone-icon"></use>
                             </svg>
@@ -56,18 +56,17 @@
                     </button>
                     <ul class="mob-menu__nav-list list">
                         <li class="mob-menu__nav-item"><a href="./index.html"
-                                class="mob-menu__link link current-page">Студия</a></li>
-                        <li class="mob-menu__nav-item"><a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                                class="mob-menu__link link">Студия</a></li>
+                        <li class="mob-menu__nav-item"><a href="./portfolio.html" class="mob-menu__link current-mob-page link">Портфолио</a>
                         </li>
                         <li class="mob-menu__nav-item"><a href="#" class="mob-menu__link link">Контакты</a></li>
                     </ul>
                     <ul class="mob-menu__contacts-list list">
-                        <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com"
-                                class="mob-menu__contact-link link">
-                                info@devstudio.com
-                            </a></li>
                         <li class="mob-menu__contacts-item"><a href="tel:+380961111111" class="mob-menu__contact-link link">
                                 +38 096 111 11 11</a></li>
+                        <li class="mob-menu__contacts-item"><a href="mailto:info@devstudio.com" class="mob-menu__mail-link link">
+                                info@devstudio.com
+                            </a></li>
                     </ul>
                     <ul class="mob-menu__soc-net-list list">
                         <li class="mob-menu__soc-net-item"><a href="#" class="mob-menu__soc-link link">Instagram</a></li>
@@ -80,9 +79,9 @@
         </div>
     </header>
     <main>
-        <section class="portfolio__list portfolio">
+        <section class="portfolio-box box">
             <div class="container">
-                <h2 class="visually-hidden">Портфолио работ</h2>
+                <h1 class="visually-hidden">Портфолио работ</h1>
                 <ul class="list portfolio__btn-list">
                     <li class="portfolio__btn-item">
                         <button type="button" class="portfolio__button">Все</button>
@@ -97,13 +96,9 @@
                         <button type="button" class="portfolio__button">Дизайн</button>
                     </li>
                     <li class="portfolio__btn-item">
-                        <button type="button" class="portfolio__button">Маркетинг</button>  
+                        <button type="button" class="portfolio__button">Маркетинг</button>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section class="portfolio-box box">
-            <div class="container">
                 <h2 class="visually-hidden">Проекты нашей Веб студии</h2>
                 <ul class="list portfolio__box-list">
                     <li class="portfolio__box-item">
@@ -122,7 +117,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Технокряк</h3>
+                            <h2 class="portfolio-box__item-title">Технокряк</h2>
                             <p class="portfolio-box__item-desc">Веб-сайт</p>
                         </div>
                     </li>
@@ -142,7 +137,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Постер New Orlean vs Golden Star</h3>
+                            <h2 class="portfolio-box__item-title">Постер New Orlean vs Golden Star</h2>
                             <p class="portfolio-box__item-desc">Дизайн</p>
                         </div>
                     </li>
@@ -162,7 +157,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Ресторан Seafood</h3>
+                            <h2 class="portfolio-box__item-title">Ресторан Seafood</h2>
                             <p class="portfolio-box__item-desc">Приложение</p>
                         </div>
                     </li>
@@ -182,7 +177,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Проект Prime</h3>
+                            <h2 class="portfolio-box__item-title">Проект Prime</h2>
                             <p class="portfolio-box__item-desc">Маркетинг</p>
                         </div>
                     </li>
@@ -202,7 +197,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Проект Boxes</h3>
+                            <h2 class="portfolio-box__item-title">Проект Boxes</h2>
                             <p class="portfolio-box__item-desc">Приложение</p>
                         </div>
                     </li>
@@ -222,7 +217,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Inspiration has no Borders</h3>
+                            <h2 class="portfolio-box__item-title">Inspiration has no Borders</h2>
                             <p class="portfolio-box__item-desc">Веб-сайт</p>
                         </div>
                     </li>
@@ -242,7 +237,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Издание Limited Edition</h3>
+                            <h2 class="portfolio-box__item-title">Издание Limited Edition</h2>
                             <p class="portfolio-box__item-desc">Дизайн</p>
                         </div>
                     </li>
@@ -262,7 +257,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Проект LAB</h3>
+                            <h2 class="portfolio-box__item-title">Проект LAB</h2>
                             <p class="portfolio-box__item-desc">Маркетинг</p>
                         </div>
                     </li>
@@ -282,7 +277,7 @@
                             </p>
                         </div>
                         <div class="portfolio__box-align">
-                            <h3 class="portfolio-box__item-title">Growing Business</h3>
+                            <h2 class="portfolio-box__item-title">Growing Business</h2>
                             <p class="portfolio-box__item-desc">Приложение</p>
                         </div>
                     </li>

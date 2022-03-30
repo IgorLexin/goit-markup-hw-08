@@ -15,29 +15,30 @@
   @include desk {
     justify-content: space-between;
     flex-wrap: nowrap;
-    padding-bottom: 94px;
   }
 }
 
 .about-us-list__item {
   width: 100%;
-  @include tab {
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
     &:nth-child(2n) {
       margin-right: 0px;
     }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
   @include desk {
     width: calc((100% - 90px) / 4);
     margin-right: 30px;
-    height: 120px;
-    &:nth-child(2n) {
-      margin-right: 30px;
-    }
+    margin-bottom: 0;
   }
-
-  margin-bottom: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .about-us-icon__wrap {
@@ -45,6 +46,7 @@
   margin-bottom: 30px;
   .about-us__icon {
     @media screen and (max-width: 479px) {
+      display: flex;
       margin: auto;
     }
     margin: 25px 192px;

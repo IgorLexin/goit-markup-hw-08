@@ -11,14 +11,16 @@
 }
 
 .current-page::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  left: 0;
-  bottom: -32px;
-  height: 4px;
-  background: var(--alt-color);
-  border-radius: 2px;
+  @include tab {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -32px;
+    height: 4px;
+    background: var(--alt-color);
+    border-radius: 2px;
+  }
 }
 
 .header__logo {
@@ -56,14 +58,16 @@
   }
 }
 
+.header-nav {
+  margin-left: 88px;
+  @include desk {
+    margin-left: 93px;
+  }
+}
 .nav-list {
   display: none;
   @include tab {
     display: flex;
-    margin-left: 88px;
-  }
-  @include desk {
-    margin-left: 93px;
   }
 }
 
@@ -93,6 +97,7 @@
 .header-contacts {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
   .header-contacts__item {
     margin-bottom: 10px;
   }
@@ -103,6 +108,9 @@
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    .header-contacts__item {
+      margin-left: 30px;
+    }
   }
 }
 
@@ -138,7 +146,6 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--description-color);
-  margin-left: 84px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -155,6 +162,5 @@
   @include desk {
     font-size: 14px;
     line-height: 1.14;
-    margin-left: 30px;
   }
 }

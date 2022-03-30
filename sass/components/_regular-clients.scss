@@ -19,8 +19,6 @@
   @include desk {
     font-size: 36px;
     line-height: 1.16;
-    padding: 0 137px;
-    padding: 0 450px;
     margin-bottom: 50px;
   }
 }
@@ -28,6 +26,9 @@
 .regular-clients__list {
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 479px) {
+    justify-content: center;
+  }
   @include desk {
     flex-wrap: nowrap;
   }
@@ -35,12 +36,16 @@
 
 .regular-clients__item {
   display: flex;
+  margin-bottom: 30px;
   @include mob {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
     &:nth-child(2n) {
       margin-right: 0px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
   @include tab {

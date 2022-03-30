@@ -1,12 +1,18 @@
 .footer__subscribe--wrap {
-  margin-top: 10px;
+  @include tab {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    @include desk {
+      padding-top: 0;
+    }
+  }
 }
 
 .subscribe {
   text-align: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 166px;
-    margin-right: 152px;
+    max-width: 450px;
   }
   @include desk {
     text-align: left;
@@ -24,7 +30,6 @@
 
 .subscribe__field {
   width: 100%;
-
   height: 50px;
   margin-top: 20px;
   margin-bottom: 20px;
